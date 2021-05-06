@@ -17,19 +17,9 @@ namespace Parcial3
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Login_Clicked(object sender, EventArgs e)
         {
-            String sUsuario = txtUsuario.Text;
-            String sPassword = txtPassword.Text;
-
-            if(sUsuario == "Admin" && (sPassword== "Admin"))
-            {
-                Navigation.PushAsync(new Dashboard());
-            }
-            else
-            {
-                lblResultado.Text = "El usuario o password son incorrectos!";
-            }
+            
         }
     }
 }
