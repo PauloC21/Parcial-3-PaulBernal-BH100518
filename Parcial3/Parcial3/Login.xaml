@@ -7,7 +7,7 @@
             <Entry Placeholder="Usuario" TextColor="Blue" x:Name="txtUsuario"/>
             <Entry Placeholder="Password" IsPassword="True" TextColor="Blue" x:Name="txtPassword"/>
             <Button Text="Iniciar Sesion" Clicked="Button_Clicked"/>
-            <Label Text="asasas" TextColor="Red"/>
+            <Label Text="Introduzca sus credenciales" x:Name="lblResultado" TextColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
