@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial3.CodeBehind">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="sc2.jpg" Aspect="AspectFill"/>
+            <Entry x:Name="Email" Placeholder="Email"
+            TextChanged="Password_TextChanged"/>
+            <Entry x:Name="Password" IsPassword="True" Placeholder="Contraseña">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="Text"
+                             Value="">
+                        <Setter Property="BackgroundColor"
+                                Value="Red">
+
+                        </Setter>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+                   
+            <Label
+                x:Name="Error"
+                FontSize="Medium"
+                TextColor="Red"/>
+            <Button x:Name="Login" Text="Login"
+                    Clicked="Login_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
